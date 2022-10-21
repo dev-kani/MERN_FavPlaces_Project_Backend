@@ -11,7 +11,6 @@ const usersRoutes = require('./routes/users-routes')
 
 const app = express()
 
-app.use(cors())
 app.use(bodyParser.json())
 
 app.use('/uploads/images', express.static(path.join('uploads', 'images')))
